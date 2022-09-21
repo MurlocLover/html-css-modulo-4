@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="cadastro" href="cadastro.js">
+</head>
+<body>
+    <h1>Formulário Moderno</h1>
+    <!--GET é pra dados não sensiveis, POST é pra disfarçar os dados pessoais mas não protege. 
+    Obs: Para proteger os dados utilizamos https-->
+    <form action="cadastro.js" method="POST" onsubmit=""> 
+        <p><label for="username">Username</label> 
+            <input type="text" name='username' id='username' autocomplete='off'></p>
+
+        <p><label for="password">Password</label> 
+            <input type='text' name='password' id='password' autocomplete="off"></p>
+            <div class="container ">
+                <button type="submit" id="connect" class="button-type3 ">
+                    <span>Connect</span>
+                </button>
+                <i class="fa fa-spinner" id='spinner' aria-hidden="true "></i>
+                <i class="fa fa-check" id='check' aria-hidden="true "></i>
+            </div>
+
+    </form>
+</body>
+</html>
